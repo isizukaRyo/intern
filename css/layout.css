@@ -1,0 +1,421 @@
+@charset "Shift_JIS";
+/* CSS Document */
+
+/*--------------------------------------------------
+	共通部分
+--------------------------------------------------*/
+
+body {
+	font-family: "ＭＳ Ｐゴシック", "ＭＳ ゴシック", "ヒラギノ角ゴ Pro W3", "ヒラギノ角ゴ ProN W3", "Osaka", "Osaka－等幅", "Arial", "Helvetica";
+	font-weight: 100;
+	color: #191919;
+	font-size: 12px;
+	background-color: #FFF;
+	line-height: 150%;
+	}
+
+.territory {
+	width: 803px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
+}
+
+
+
+.cap_a {
+	width: 180px;
+	float: left;
+	text-align:justify;
+	text-justify:inter-ideograph;
+}
+
+
+
+/*--------------------------------------------------
+	フォントスタイル
+--------------------------------------------------*/
+
+.bold { font-weight: bold; }
+
+
+
+
+/*--------------------------------------------------
+	リストスタイル
+--------------------------------------------------*/
+
+ol,ul .li1 {
+	list-style-image: url(../img/list_img.gif);
+	list-style-position: inherit;
+	line-height: 300%;
+	list-style-type: disc;
+}
+
+ol,ul .li2 {
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+
+
+/*--------------------------------------------------
+	サイズ
+--------------------------------------------------*/
+
+.fs10 { font-size: 10px; }
+.fs11 { font-size: 11px; }
+.fs12 { font-size: 12px; }
+.fs13 { font-size: 13px; }
+.fs14 { font-size: 14px; }
+.fs15 { font-size: 15px; }
+.fs16 { font-size: 16px; }
+.fs18 { font-size: 18px; }
+.fs20 { font-size: 20px; }
+.fs22 { font-size: 24px; }
+.fs24 { font-size: 24px; }
+.fs32 { font-size: 32px; }
+
+.lh050 { line-height: 50%; }
+.lh100 { line-height: 100%; }
+.lh110 { line-height: 110%; }
+.lh125 { line-height: 125%; }
+.lh150 { line-height: 150%; }
+.lh175 { line-height: 175%; }
+.lh200 { line-height: 200%; }
+.lh300 { line-height: 300%; }
+
+/*--------------------------------------------------
+	テキストカラー
+--------------------------------------------------*/
+
+.white	{ color: #FFF; }
+.gray	{ color: #808080; }
+.black	{ color: #191919; }
+.red	{ color: #E8380D; }
+
+
+/*--------------------------------------------------
+	リンクカラー
+--------------------------------------------------*/
+
+/* アンダーラインリンク */
+a:link		{color: #191919; text-decoration: underline;}
+a:visited 	{color: #191919; text-decoration: underline;}
+a:hover		{color: #191919; text-decoration: none;}
+a:active 	{color: #191919; text-decoration: none;}
+
+
+/* ノンアンダーラインリンク(オーバー時もアンダーラインあり) */
+none a,a.none	{color: #191919; text-decoration:none;}
+none a:hover,
+a.none:hover	{color: #191919; text-decoration:underline;}
+
+/* ノンアンダーラインリンク(オーバー時もアンダーラインなし)*/
+none2 a,a.none2	{color: #191919; text-decoration:none;}
+none2 a:hover,
+a.none2:hover	{color: #191919; text-decoration:none;}
+
+
+/*--------------------------------------------------
+	ロールオーバー画像
+--------------------------------------------------*/
+a:hover img		{ filter:alpha(opacity=80); -moz-opacity:0.80; -khtml-opacity: 0.80; opacity: 0.80; }  
+
+/* 予備 -------------------------------
+.high a:hover img	{filter:alpha(opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8; }
+--------------------------------------------------*/
+
+/*--------------------------------------------------
+	余白
+--------------------------------------------------*/
+
+.mgT-05 { margin-top: -05px; }
+.mgT05 { margin-top: 5px; }
+.mgT10 { margin-top: 10px; }
+.mgT15 { margin-top: 15px; }
+.mgT20 { margin-top: 20px; }
+.mgT25 { margin-top: 25px; }
+.mgT30 { margin-top: 30px; }
+.mgT35 { margin-top: 35px; }
+.mgT40 { margin-top: 40px; }
+.mgT45 { margin-top: 45px; }
+.mgT50 { margin-top: 50px; }
+.mgT60 { margin-top: 60px; }
+.mgT70 { margin-top: 70px; }
+.mgT80 { margin-top: 80px; }
+
+.mgL05 { margin-left: 5px; }
+.mgL10 { margin-left: 10px; }
+.mgL15 { margin-left: 15px; }
+.mgL20 { margin-left: 20px; }
+.mgL25 { margin-left: 25px; }
+.mgL30 { margin-left: 30px; }
+.mgL35 { margin-left: 35px; }
+.mgL40 { margin-left: 40px; }
+.mgL50 { margin-left: 50px; }
+.mgL60 { margin-left: 60px; }
+.mgL70 { margin-left: 70px; }
+
+.mgR05 { margin-right: 5px; }
+.mgR10 { margin-right: 10px; }
+.mgR15 { margin-right: 15px; }
+.mgR20 { margin-right: 20px; }
+.mgR25 { margin-right: 25px; }
+.mgR30 { margin-right: 30px; }
+.mgR40 { margin-right: 40px; }
+.mgR50 { margin-right: 50px; }
+.mgR60 { margin-right: 60px; }
+.mgR70 { margin-right: 70px; }
+
+
+/*--------------------------------------------------
+	float解除
+--------------------------------------------------*/
+
+.both { clear: both; }
+.right { clear: right; }
+.left { clear: left; }
+.block { display: block; }
+
+/* floatを小要素に含んだ親要素に適用する */
+.overflow{
+  overflow:hidden;
+  zoom:1;/*IE 用 */
+}
+
+
+
+/*--------------------------------------------------
+	ボーダーラインスタイル
+--------------------------------------------------*/
+
+hr.hr1 {
+border:none;
+border-top:solid 1px #191919;
+height:1px;
+color:#FFFFFF;
+}
+
+
+hr.hr2 {
+border:none;
+border-top:dashed 1px #191919;
+height:1px;
+color:#FFFFFF;
+}
+
+
+
+/*--------------------------------------------------
+	位置
+--------------------------------------------------*/
+
+.alnR { text-align: right; }
+.alnC { text-align: center; }
+.alnL { text-align: left; }
+.alnJ { text-align:justify;
+		text-justify:inter-ideograph;}
+
+.fltR { float: right; }
+.fltL { float: left; }
+
+
+
+/*==================================================
+	設定リセット
+==================================================*/
+
+* {	margin: 0;	padding: 0;}
+
+body,div,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,
+p,blockquote,pre,cite,code,caption,
+form,fieldset,legend,input,textarea,select,option,label {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1,h2,h3,h4,h5,h6 { font-size: 100%; }
+
+input,textarea { font-size: 100%; }
+
+ol,ul {	list-style: none; }
+
+address,em,cite { font-style: normal; }
+
+img { border: none; }
+
+a { overflow: hidden; text-decoration: none; }
+
+
+/*==================================================
+	ライトボックス
+==================================================*/
+
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #EEEFEF; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #EEEFEF; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+
+/*==================================================
+	その他
+==================================================*/
+
+
+h1#pagetop {
+	font-style: normal;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 50px;}
+
+.school_back01 {
+	background-image: url(../img/school_back01.gif);
+	background-repeat: no-repeat;
+	height: 230px;
+	width: 230px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	}
+
+.school_support {
+	width: 480px;
+	}
+.school_support_img {
+	width: 155px;
+	}
+.school_contact {
+	padding: 30px;
+	width: 740px;
+	border: 2px solid #191919;
+}
+.school_muryou {
+	padding: 30px;
+	width: 740px;
+	border: 2px solid #E8380D;
+}
+.school_point {
+	width: 380px;
+	float: left;
+}
+.title_point {
+	width: 420px;
+	float: right;
+}
+
+.sitemap_txt_1 {
+	width: 100px;
+	float: left;
+}
+.sitemap_txt_2 {
+	width: 230px;
+	float: left;
+}
+.access_txt {
+	width: 280px;
+	float: left;
+}
+.FAQ_txtbox {
+	width: 365px;
+	float: left;
+}
+.file_txtbox {
+	width: 230px;
+	float: left;
+}
+
+.profile_txtbox {
+	width: 475px;
+	float: left;
+}
+
+
+/*----旧タイトルページ----------------------------------------------
+
+.title_title {
+	width: 800px;
+	background-image: url(../img/title_back.jpg);
+	height: 360px;
+}
+.title_title2 {
+	width: 800px;
+	height: 50px;
+	background-image: url(../img/title_back2.jpg);
+}
+--------------------------------------------------*/
+
+.works_imgbox01_img {
+	width: 470px;
+	float: left;
+	border: 1px solid #CCC;
+	text-align: center;
+	height: 300px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.works_imgbox01_txt {
+	width: 470px;
+	font-size: 11px;
+	clear: both;
+	margin-top: 5px;
+	}
+.works_imgbox02_img {
+	float: left;
+	margin-right: 10px;
+	margin-top: 40px;
+	border: 1px solid #CCC;
+	padding: 5px;
+}
+.works_imgbox02_txt {
+	float: left;
+	margin-right: 30px;
+	margin-top: 40px;
+	font-size: 11px;
+	line-height: 150%;
+}
+.works_imgbox02_txt_last {
+	width: 125px;
+	float: left;
+	margin-top: 50px;
+	font-size: 11px;
+	line-height: 150%;
+}
+
+
+.small_contact {
+	float: left;
+}
+
+.workscont01{
+	background-color: #F1F1F1;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+
+	}
+.worksbtn01{
+	
+}
